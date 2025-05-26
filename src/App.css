@@ -1,52 +1,86 @@
 body {
   margin: 0;
-  background-color: #6A2DAD; /* fundo roxo */
-  font-family: 'Arial Rounded MT Bold', 'Arial', sans-serif;
+  background-color: #6A2DAD;
+  font-family: 'Comic Neue', 'Arial Rounded MT Bold', sans-serif;
   color: white;
 }
 
 .App {
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr minmax(800px, 1000px) 1fr;
+  grid-template-areas:
+    "title title title"
+    "left main right";
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  background-color: #2e004f;
   padding: 2rem;
-  max-width: 700px;
-  margin: auto;
+  gap: 2rem;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 2.5rem;
-  color: #FFD700; /* amarelo ouro */
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px #3e1f61;
+.App > p {
+  max-width: 100%;
+  margin: 2rem auto 0 auto; /* top, right, bottom, left */
+  font-size: 3rem;
+  white-space: nowrap;
+  text-align: center;
 }
 
-p strong {
-  display: block;
-  font-size: 1.2rem;
-  color: #fff;
-  margin-bottom: 0.5rem;
+.App > p strong {
+  color: #FFD700;
+}
+
+.info-box {
+  grid-area: left;
+  color: #ffd900b4;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  line-height: 1.8;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.jogo-box {
+  grid-area: main;
+  color: #FFD700;
+  font-size: 3rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  padding: 3rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+  width: 140%;
+}
+
+.jogo-conteudo-central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .words-pool {
-  margin: 1.5rem auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 0.7rem;
+  margin: 1.5rem auto;
 }
 
 .words-pool button {
   background-color: #2E8B57;
   color: #fffbe8;
   border: none;
-  padding: 10px 18px;
-  font-size: 1.1rem;
+  padding: 12px 20px;
+  font-size: 2rem;
   font-weight: bold;
   border-radius: 10px;
   box-shadow: 0 4px #1b5e3c;
   cursor: pointer;
   transition: transform 0.2s;
 }
-
 .words-pool button:hover {
   transform: scale(1.05);
   background-color: #3cb371;
@@ -58,72 +92,109 @@ p strong {
 
 .current-sentence h3,
 .premises h3 {
-  color: #FFD700;
+  color: #fffbe8;
   margin-bottom: 0.5rem;
+  font-size: 2rem;
 }
 
 .current-sentence p {
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  color: #fffbe8;
   margin-bottom: 1rem;
   font-style: italic;
 }
 
 .current-sentence button {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #6a0dad;
+  color: #fffbe8;
   border: none;
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin: 5px;
-  box-shadow: 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px rgba(0,0,0,0.2);
   cursor: pointer;
 }
-
-.current-sentence button:hover {
-  transform: scale(1.05);
+.current-sentence button:hover { transform: scale(1.05); }
+.current-sentence button:nth-child(3) {
+  background-color: #6a0dad;
+  color: #fffbe8;
 }
 
-.current-sentence button:nth-child(3) {
-  background-color: #2E8B57;
-  color: #fffbe8;
+.premises-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.premises {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .premises ul {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .premises li {
   background-color: rgba(255, 255, 255, 0.08);
   border-radius: 6px;
   padding: 0.5rem 1rem;
-  margin-bottom: 0.5rem;
-  font-size: 1.1rem;
-}
-
-button.verificar {
-  background-color: #fffbe8;
-  color: #2E8B57;
-  border: none;
-  padding: 0.9rem 1.6rem;
-  font-size: 1.1rem;
-  border-radius: 10px;
-  font-weight: bold;
-  margin-top: 1rem;
-  cursor: pointer;
-  box-shadow: 0 4px #aaa;
-}
-
-button.verificar:hover {
-  transform: scale(1.05);
+  font-size: 1.5rem;
+  width: fit-content;
 }
 
 .resultado {
   margin-top: 1.5rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   font-weight: bold;
   color: #fffbe8;
+}
+
+button {
+  transition: all 0.2s ease;
+}
+
+.verificar,
+.botao-proxima,
+.botao-tentar {
+  padding: 14px 24px;
+  margin: 1rem 0;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.verificar { background-color: #4CAF50; color: white; }
+.verificar:hover { background-color: #45a049; }
+
+.botao-proxima,
+.botao-tentar {
+  background-color: #6a0dad;
+  color: white;
+}
+
+.botoes-acao {
+  display: flex;
+  justify-content: center;
+  gap: 1rem; /* espaço entre os botões */
+  flex-wrap: wrap; /* se a tela for pequena, permite quebra */
+  margin-top: 1.5rem;
+}
+
+.botao-proxima:hover,
+.botao-tentar:hover {
+  background-color: #7d23d6;
 }

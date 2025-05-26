@@ -1,0 +1,55 @@
+.tela-inicial-cruzadinha {
+  height: 100vh;
+  background-color: #6a2dad;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial Rounded MT Bold', Arial, sans-serif;
+}
+
+.titulo {
+  color: #FFD700;
+  font-size: 3rem;
+  font-size: 8rem;
+  text-shadow: 2px 2px #3e1f61;
+  margin-bottom: 2rem;
+}
+
+.botao-jogar {
+  background-color: #2e8b57;
+  color: #fffbe8;
+  border: none;
+  padding: 1rem 6rem;
+  font-size: 5rem;
+  font-weight: bold;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px #1b5e3c;
+  transition: all 0.2s;
+}
+
+.botao-jogar:hover {
+  transform: scale(1.05);
+  background-color: #3cb371;
+}
+
+.input-nome {
+  padding: 1rem;
+  font-size: 4rem;
+  border: none;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.jogo-box {
+  grid-column: 2;
+  background-color: #2e004f; /* fundo roxo puro */
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  margin: auto;
+}
+

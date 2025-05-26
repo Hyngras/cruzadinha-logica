@@ -1,0 +1,89 @@
+[
+  {
+    "conclusao": "Logo, Mario precisa resgatar a princesa.",
+    "premissasCorretas": [
+      "Mario quer salvar a princesa",
+      "A princesa está em perigo"
+    ],
+    "palavras": [
+      "Mario", "quer", "salvar", "a", "princesa",
+      "A", "princesa", "está", "em", "perigo"
+    ]
+  },
+  {
+    "conclusao": "Logo, as árvores fazem parte da natureza.",
+    "premissasCorretas": [
+      "Todas as árvores crescem na natureza",
+      "Tudo que cresce na natureza faz parte dela"
+    ],
+    "palavras": [
+      "Todas", "as", "árvores", "crescem", "na", "natureza",
+      "Tudo", "que", "cresce", "faz", "parte", "dela"
+    ]
+  },
+  {
+    "conclusao": "Logo, se chove, então a rua fica molhada.",
+    "premissasCorretas": [
+      "Se chove",
+      "Então a rua fica molhada"
+    ],
+    "palavras": [
+      "Se", "chove", "então", "a", "rua", "fica", "molhada"
+    ]
+  },
+  {
+    "conclusao": "Logo, o leite vem da vaca.",
+    "premissasCorretas": [
+      "As vacas produzem leite",
+      "O leite que bebemos vem das vacas"
+    ],
+    "palavras": [
+      "As", "vacas", "produzem", "leite",
+      "O", "leite", "que", "bebemos", "vem", "das", "vacas"
+    ]
+  },
+  {
+    "conclusao": "Logo, Darth Vader era Anakin Skywalker.",
+    "premissasCorretas": [
+      "Anakin virou Darth Vader",
+      "Anakin era um Jedi"
+    ],
+    "palavras": [
+      "Anakin", "virou", "Darth", "Vader",
+      "era", "um", "Jedi"
+    ]
+  },
+  {
+    "conclusao": "Logo, se a planta não recebe luz, então ela não cresce.",
+    "premissasCorretas": [
+      "Se a planta não recebe luz",
+      "Então ela não cresce"
+    ],
+    "palavras": [
+      "Se", "a", "planta", "não", "recebe", "luz",
+      "então", "ela", "não", "cresce"
+    ]
+  },
+  {
+    "conclusao": "Logo, a Lei Áurea aboliu a escravidão no Brasil.",
+    "premissasCorretas": [
+      "A escravidão acabou em 1888",
+      "A Lei Áurea foi assinada em 1888"
+    ],
+    "palavras": [
+      "A", "escravidão", "acabou", "em", "1888",
+      "Lei", "Áurea", "foi", "assinada"
+    ]
+  },
+  {
+    "conclusao": "Logo, se a Terra gira, então temos dia e noite.",
+    "premissasCorretas": [
+      "Se a Terra gira",
+      "Então acontece o dia e a noite"
+    ],
+    "palavras": [
+      "Se", "a", "Terra", "gira",
+      "então", "acontece", "o", "dia", "e", "a", "noite"
+    ]
+  }
+]
