@@ -1,75 +1,73 @@
-<<<<<<< HEAD
-# Getting Started with Create React App
+# Cruzadinha Lógica
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Um jogo educacional e interativo feito com React que estimula o raciocínio lógico através da construção de premissas e conclusões.
 
-## Available Scripts
+## 🎯 Objetivo
 
-In the project directory, you can run:
+Permitir que o jogador resolva desafios lógicos montando premissas que justifiquem conclusões apresentadas em cada rodada.
 
-### `npm start`
+## 🧠 Como funciona
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* O jogador informa seu nome na tela inicial
+* Em cada rodada:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  * Uma conclusão é apresentada
+  * Palavras são exibidas para que o jogador monte as premissas corretas
+  * Ao confirmar, é feita a validação da resposta
+* Pontuação é acumulada com base nas respostas corretas
+* Ao final, é exibida a pontuação total
 
-### `npm test`
+## 🖼️ Screenshots
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+As telas do jogo incluem:
 
-### `npm run build`
+* Tela de Nome
+* Rodadas com seleção de palavras
+* Validação de premissas
+* Tela final com pontuação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🚀 Tecnologias Utilizadas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* React.js
+* CSS Grid Layout
+* JSON externo para dados
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 📁 Estrutura de Arquivos
 
-### `npm run eject`
+```
+cruzadinha-logica/
+├── public/
+│   └── premissas.json
+├── src/
+│   ├── components/
+│   ├── App.js
+│   ├── styles.css
+│   └── ...
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Como executar localmente
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Clone este repositório:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   ```bash
+   git clone https://github.com/seu-usuario/cruzadinha-logica.git
+   ```
+2. Instale as dependências:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
+3. Execute o projeto:
 
-## Learn More
+   ```bash
+   npm start
+   ```
+4. Acesse em `http://localhost:3000`
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 👥 Equipe de Desenvolvimento
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* Diego David Alves Xavier
+* Hyngrid Souza e Silva
+* Pamela Rodrigues
+* Maria Gabriela Damásio
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-=======
-# cruzadinha-logica
-Um jogo de lógica construído com React, onde o jogador precisa montar 'premissas válidas' que justifiquem uma conclusão.
->>>>>>> bfa3ef933f48cb2ef51f3727b24a19592c5d081a
